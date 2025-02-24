@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punhetas do André</title>
+    <!-- Adicionando o Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
         body {
             background-color: black;
@@ -17,6 +19,7 @@
             font-weight: bold;
             font-family: 'Arial Black', sans-serif;
             margin-bottom: 20px;
+            user-select: none; /* Impede a seleção do título do site */
         }
         .title-white {
             color: white;
@@ -58,9 +61,8 @@
             max-height: 600px;
             margin: 0 auto;
         }
-        /* Evitar seleção do título */
         h3 {
-            user-select: none;
+            user-select: text; /* Permite a seleção dos títulos dos vídeos */
         }
     </style>
 </head>
